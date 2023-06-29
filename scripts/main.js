@@ -19,3 +19,12 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  const banners = Array.from(document.querySelectorAll(".swiper-slide"))
+  
+  banners.forEach((el) => {
+    el.addEventListener("click", e => {
+      window.location.href = el.getAttribute('data-url')
+    })
+  })
+  

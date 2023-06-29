@@ -32,9 +32,12 @@ background: radial-gradient(circle, rgb(126, 175, 149) 10%, rgba(0,0,0,1) 130%);
 .header__logo {
     width: 100px;
     height: 100px;
-    background-color: black;
 }
-
+.header__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .header__nav {
     width: 40%;
     display: flex;
@@ -69,6 +72,7 @@ background: radial-gradient(circle, rgb(126, 175, 149) 10%, rgba(0,0,0,1) 130%);
 
     left: -100px;
     z-index: 100;
+    margin-bottom: 10px;
 }
 .swiper__img img {
     width: 100%;

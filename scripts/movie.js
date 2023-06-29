@@ -22,7 +22,7 @@ async function getFilms() {
         console.log(el)
     });
 }
-getFilms().then();
+getFilms();
 
 let drawModal = async (el) => {
 
