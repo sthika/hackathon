@@ -49,16 +49,36 @@ a {
 .modal {
     position: absolute;
     width: 80%;
-    height: 70%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 50px;
 
-    background-color: rgba(39, 37, 37, 0.3);
+    background-color: rgba(136, 135, 135, 0.3);
     border-radius: 20px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(50px);
     z-index: 1000;
+    color: #EAEAEA;
+    text-transform: capitalize;
+}
+.desc {
+    margin-bottom: 10px;
+}
+
+.modal__icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+
+}
+.modal__icon img{
+    width: 100%;
+    height: 100%;
+
 }
