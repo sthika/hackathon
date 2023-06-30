@@ -82,7 +82,7 @@ button {
 .modal {
     position: absolute;
     width: 80%;
-    height: 70%;
+
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -128,4 +128,18 @@ button {
 }
 .modal__subtitle {
     margin: 40px 0 20px;
+}
+
+@media (max-width:490px) {
+
+.swiper__img {
+    height: 504px;
+}
+.modal{
+    flex-direction: column;
+}
+.modal__desc {
+    width: 100%;
+}
+
 }
