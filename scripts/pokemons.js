@@ -17,7 +17,6 @@ let apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=21'
       let allPokemon = await getData()
       return allPokemon.forEach(el => {
           drawCard(el)
-          console.log(el)
       });
   }
 getPokemons()
@@ -81,12 +80,24 @@ const drawModal = async (el) => {
     })
     abilities.innerText = `Abilities: ${arr.join(", ")}`
 
+    let addIcon =() => {
+        let iconWrap = document.createElement('div')
+        modal.appendChild(iconWrap)
+    
+        let icon = document.createElement('img')
+        icon.src = './images/xmark-solid.svg'
+        iconWrap.appendChild(icon)
+        iconWrap.className = "modal__icon"
+        icon.addEventListener("click", (e) => {
+            modal.remove()
+        })
+    }
+    addIcon()
+
 }
 
 const drawCard = async (el) => {
     const res = await getAllPokemons(el)
-
-
 
     let card = document.createElement("div")
     card.classList = "main__card"

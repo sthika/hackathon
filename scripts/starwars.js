@@ -2,6 +2,7 @@ let wrapper = document.querySelector(".main__wrapper")
 let container = document.querySelector(".container")
 let links = Array.from(document.querySelectorAll('.header__link'))
 let activeLink
+
 links.forEach((el) => {
     el.addEventListener("click", (e) => {
         activeLink = el.innerHTML
@@ -121,6 +122,10 @@ const drowModalPeople = async (el) => {
     modal.appendChild(homeworld)
     homeworld.innerText = `Homeworld: ${home.name}`
 
+    let films = document.createElement("p")
+    films.classList = "desc"
+    modal.appendChild(films)
+
     let filmsLink = el.films 
 
     async function getFilms(link) {
@@ -137,16 +142,14 @@ const drowModalPeople = async (el) => {
     const film = await getUrl()
     return film
     }
-    const film1 = await getFilms(filmsLink[0])
-    const film2 = await getFilms(filmsLink[1])
-    const film3 = await getFilms(filmsLink[2])
-    const film4 = await getFilms(filmsLink[3])
-
-
-    let films = document.createElement("p")
-    films.classList = "desc"
-    modal.appendChild(films)
-    films.innerText = `Films: ${film1.title}, ${film2.title}, ${film3.title}, ${film4.title}`   
+    const fnArray = el.films.map((a) => getFilms(a));
+    const filmsArray = await Promise.all(fnArray)
+let arr = []
+    filmsArray.forEach((el) => {
+        arr.push(el.title)        
+    })
+    let ab = arr.join(", ")
+    films.innerText = `Films: ${ab}`  
 
 
 }
@@ -393,7 +396,6 @@ let arr = []
 }
 
 let modal = document.querySelector('.modal')
-
 
 const linkMethodsMap = {
     people: drowModalPeople,

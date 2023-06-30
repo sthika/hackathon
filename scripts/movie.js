@@ -19,7 +19,6 @@ async function getFilms() {
     let films = await getData()
     return films.forEach(el => {
         drawCard(el)
-        console.log(el)
     });
 }
 getFilms();
