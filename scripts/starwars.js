@@ -56,7 +56,7 @@ const drowModalPeople = async (el) => {
     wrapper.appendChild(modal)
 
     let name = document.createElement("p")
-    name.classList = "desc"
+    name.classList = "modal__desc"
     modal.appendChild(name)
     name.innerText = `Name: ${el.name}`
 
@@ -72,32 +72,32 @@ const drowModalPeople = async (el) => {
     })
 
     let height = document.createElement("p")
-    height.classList = "desc"
+    height.classList = "modal__desc"
     modal.appendChild(height)
     height.innerText = `Height: ${el.height}`
 
     let mass = document.createElement("p")
-    mass.classList = "desc"
+    mass.classList = "modal__desc"
     modal.appendChild(mass)
     mass.innerText = `Mass: ${el.mass}`
     
     let hair = document.createElement("p")
-    hair.classList = "desc"
+    hair.classList = "modal__desc"
     modal.appendChild(hair)
     hair.innerText = `Hair color: ${el.hair_color}`
 
     let eye = document.createElement("p")
-    eye.classList = "desc"
+    eye.classList = "modal__desc"
     modal.appendChild(eye)
     eye.innerText = `Eye color: ${el.eye_color}`
 
     let birthYear = document.createElement("p")
-    birthYear.classList = "desc"
+    birthYear.classList = "modal__desc"
     modal.appendChild(birthYear)
     birthYear.innerText = `Birdth year: ${el.birth_year}`
 
     let gender = document.createElement("p")
-    gender.classList = "desc"
+    gender.classList = "modal__desc"
     modal.appendChild(gender)
     gender.innerText = `Gender: ${el.gender}`
 
@@ -118,12 +118,12 @@ const drowModalPeople = async (el) => {
     const home = await getAllhomeworld(el)
 
     let homeworld = document.createElement("p")
-    homeworld.classList = "desc"
+    homeworld.classList = "modal__desc"
     modal.appendChild(homeworld)
     homeworld.innerText = `Homeworld: ${home.name}`
 
     let films = document.createElement("p")
-    films.classList = "desc"
+    films.classList = "modal__desc"
     modal.appendChild(films)
 
     let filmsLink = el.films 
@@ -159,7 +159,7 @@ const drowModalStarships = async (el) => {
     wrapper.appendChild(modal)
 
     let name = document.createElement("p")
-    name.classList = "desc"
+    name.classList = "modal__desc"
     modal.appendChild(name)
     name.innerText = `Name: ${el.name}`
     let iconWrap = document.createElement('div')
@@ -174,37 +174,37 @@ const drowModalStarships = async (el) => {
     })
 
     let manufacturer = document.createElement("p")
-    manufacturer.classList = "desc"
+    manufacturer.classList = "modal__desc"
     modal.appendChild(manufacturer)
     manufacturer.innerText = `manufacturer: ${el.manufacturer}`
 
     let length = document.createElement("p")
-    length.classList = "desc"
+    length.classList = "modal__desc"
     modal.appendChild(length)
     length.innerText = `length: ${el.length}`
     
     let speed = document.createElement("p")
-    speed.classList = "desc"
+    speed.classList = "modal__desc"
     modal.appendChild(speed)
     speed.innerText = `speed: ${el.max_atmosphering_speed}`
 
     let passengers = document.createElement("p")
-    passengers.classList = "desc"
+    passengers.classList = "modal__desc"
     modal.appendChild(passengers)
     passengers.innerText = `passengers: ${el.passengers}`
 
     let consumables = document.createElement("p")
-    consumables.classList = "desc"
+    consumables.classList = "modal__desc"
     modal.appendChild(consumables)
     consumables.innerText = `consumables: ${el.consumables}`
 
     let MGLT = document.createElement("p")
-    MGLT.classList = "desc"
+    MGLT.classList = "modal__desc"
     modal.appendChild(MGLT)
     MGLT.innerText = `MGLT: ${el.MGLT}`
 
     let films = document.createElement("p")
-    films.classList = "desc"
+    films.classList = "modal__desc"
     modal.appendChild(films)
 
     let filmsLink = el.films 
@@ -239,7 +239,7 @@ const drowModalPlanets = async (el) => {
     wrapper.appendChild(modal)
 
     let name = document.createElement("p")
-    name.classList = "desc"
+    name.classList = "modal__desc"
     modal.appendChild(name)
     name.innerText = `Name: ${el.name}`
 
@@ -255,42 +255,42 @@ const drowModalPlanets = async (el) => {
     })
 
     let rotationperiod = document.createElement("p")
-    rotationperiod.classList = "desc"
+    rotationperiod.classList = "modal__desc"
     modal.appendChild(rotationperiod)
     rotationperiod.innerText = `rotation period: ${el.rotation_period}`
 
     let orbital_period = document.createElement("p")
-    orbital_period.classList = "desc"
+    orbital_period.classList = "modal__desc"
     modal.appendChild(orbital_period)
     orbital_period.innerText = `orbital period: ${el.orbital_period}`
 
     let diameter = document.createElement("p")
-    diameter.classList = "desc"
+    diameter.classList = "modal__desc"
     modal.appendChild(diameter)
     diameter.innerText = `diameter: ${el.diameter}`
 
     let climate = document.createElement("p")
-    climate.classList = "desc"
+    climate.classList = "modal__desc"
     modal.appendChild(climate)
     climate.innerText = `climate: ${el.climate}`
 
     let gravity = document.createElement("p")
-    gravity.classList = "desc"
+    gravity.classList = "modal__desc"
     modal.appendChild(gravity)
     gravity.innerText = `gravity: ${el.gravity}`
 
     let terrain = document.createElement("p")
-    terrain.classList = "desc"
+    terrain.classList = "modal__desc"
     modal.appendChild(terrain)
     terrain.innerText = `terrain: ${el.terrain}`
 
     let population = document.createElement("p")
-    population.classList = "desc"
+    population.classList = "modal__desc"
     modal.appendChild(population)
     population.innerText = `population: ${el.population}`
 
     let films = document.createElement("p")
-    films.classList = "desc"
+    films.classList = "modal__desc"
     modal.appendChild(films)
 
     let filmsLink = el.films 
@@ -325,7 +325,7 @@ const drowModalFilms = async (el) => {
     wrapper.appendChild(modal)
 
     let title = document.createElement("p")
-    title.classList = "desc"
+    title.classList = "modal__desc"
     modal.appendChild(title)
     title.innerText = `Name: ${el.title}`
 
@@ -342,29 +342,29 @@ const drowModalFilms = async (el) => {
     })
 
     let opening_crawl = document.createElement("p")
-    opening_crawl.classList = "desc"
+    opening_crawl.classList = "modal__desc"
     modal.appendChild(opening_crawl)
     opening_crawl.innerText = `Opening crawl: ${el.opening_crawl}`
 
     let director = document.createElement("p")
-    director.classList = "desc"
+    director.classList = "modal__desc"
     modal.appendChild(director)
     director.innerText = `Director: ${el.director}`
 
     let producer = document.createElement("p")
-    producer.classList = "desc"
+    producer.classList = "modal__desc"
     modal.appendChild(producer)
     producer.innerText = `producer: ${el.producer}`
 
     let release_date = document.createElement("p")
-    release_date.classList = "desc"
+    release_date.classList = "modal__desc"
     modal.appendChild(release_date)
     release_date.innerText = `release_date: ${el.release_date}`
 
  
 
     let films = document.createElement("p")
-    films.classList = "desc"
+    films.classList = "modal__desc"
     modal.appendChild(films)
 
     let charactersLink = el.characters 

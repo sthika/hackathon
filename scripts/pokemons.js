@@ -37,7 +37,6 @@ return pokemons
 }
 
 const drawModal = async (el) => {
-    // modal.remove()
     const res = await getAllPokemons(el)
     console.log(res)
 
@@ -57,22 +56,22 @@ const drawModal = async (el) => {
 
    let title = document.createElement('p')
     modal.appendChild(title)
-    title.className = 'desc'
+    title.className = 'modal__desc'
     title.innerText = el.name
 
     let height = document.createElement('p')
     modal.appendChild(height)
-    height.className = 'desc'
+    height.className = 'modal__desc'
     height.innerText = `Height: ${res.height}`
 
     let weight = document.createElement('p')
     modal.appendChild(weight)
-    weight.className = 'desc'
+    weight.className = 'modal__desc'
     weight.innerText = `Weight: ${res.weight}`
 
     let abilities = document.createElement('p')
     modal.appendChild(abilities)
-    abilities.className = 'desc'
+    abilities.className = 'modal__desc'
     const abilitiesName = res.abilities
     let arr =[]
     abilitiesName.forEach((el) => {
@@ -105,7 +104,7 @@ const drawCard = async (el) => {
 
     let imageWrap = document.createElement('div')
     card.appendChild(imageWrap)
-    imageWrap.className = 'modal__img'
+    imageWrap.className = 'main__wrap modal__img'
 
     let image = res.sprites
     let img = document.createElement('img')

@@ -79,11 +79,11 @@ let addIcon =() => {
 
 drawCard = (el) => {
     let card = document.createElement("div")
-    card.classList = "swiper-slide"
+    card.classList = "swiper-slide main__card"
     swiperWrapper.appendChild(card)
 
     let imageWrap = document.createElement("div")
-    imageWrap.classList = "swiper__img"
+    imageWrap.classList = "main__img"
     card.appendChild(imageWrap)
     
     let img = document.createElement("img")

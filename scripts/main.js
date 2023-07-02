@@ -1,38 +1,18 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    // loop: true,
-  
-    // // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-  
-    // // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-  
-    // // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
     effect: "cards",                   
     cardsEffect: {
-        perSlideOffset: 15,             // slide gap(px)
-        perSlideRotate: 10,             // Rotation angle of second and subsequent slides
-        rotate: true,                   // Rotation presence of second and subsequent slides(true/false)
-        slideShadows: false,            // Shadow presence of second and subsequent slides(true/false)
+        perSlideOffset: 15, 
+        perSlideRotate: 10, 
+        rotate: true,
+        slideShadows: false,
     },
-    grabCursor: true,                   //grab cursor
-    pagination: {                       //pagination(dots)
+    grabCursor: true,
+    pagination: {   
         el: '.swiper-pagination',
     },
-    navigation: {                       //navigation(arrows)
+    navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-
     },
     
   });
