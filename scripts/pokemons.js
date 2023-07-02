@@ -51,7 +51,7 @@ const drawModal = async (el) => {
     let image = res.sprites
     let img = document.createElement('img')
     imageWrap.appendChild(img)
-    img.src = image.back_default
+    img.src = image.front_default
     
 
    let title = document.createElement('p')
@@ -109,7 +109,7 @@ const drawCard = async (el) => {
     let image = res.sprites
     let img = document.createElement('img')
     imageWrap.appendChild(img)
-    img.src = image.back_default
+    img.src = image.front_default
 
     let title = document.createElement("p")
     title.classList = "main__title"
